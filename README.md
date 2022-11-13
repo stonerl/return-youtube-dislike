@@ -1,3 +1,4 @@
+123456
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/stars/gebbhagfogifgggkldgodflihgfeippi?label=Chrome%20Rating&style=flat&logo=google)](https://chrome.google.com/webstore/detail/youtube-dislike-button/gebbhagfogifgggkldgodflihgfeippi/)
 [![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/gebbhagfogifgggkldgodflihgfeippi?label=Chrome%20Users&style=flat&logo=google)](https://chrome.google.com/webstore/detail/youtube-dislike-button/gebbhagfogifgggkldgodflihgfeippi/)
 [![Mozilla rating](https://img.shields.io/amo/stars/return-youtube-dislikes?label=Firefox%20Rating&style=flat&logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/return-youtube-dislikes/)
@@ -41,15 +42,15 @@ Third-party use of this open API is allowed with the following restrictions:
 - **Attribution**: This project should be clearly attributed with a link to [returnyoutubedislike.com](https://returnyoutubedislike.com/).
 - **Rate Limiting**: There are per client rate limits in place of 100 per minute and 10'000 per day. This will return a _429_ status code indicating that your application should back off.
 
-The API is accessible over the following base URL:  
+The API is accessible over the following base URL:
 https://returnyoutubedislikeapi.com
 
-List of available endpoints is available here:  
+List of available endpoints is available here:
 https://returnyoutubedislikeapi.com/swagger/index.html
 
 ### Get votes
 
-Example to get votes of a given YouTube video ID:  
+Example to get votes of a given YouTube video ID:
 `/votes?videoId=kxOuG8jMIgI`
 
 ```json
@@ -64,7 +65,7 @@ Example to get votes of a given YouTube video ID:
 }
 ```
 
-None existing YouTube ID will return status code _404_ "Not Found".  
+None existing YouTube ID will return status code _404_ "Not Found".
 Wrong formed YouTube ID will return _400_ "Bad Request".
 
 <!---
